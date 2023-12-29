@@ -6,7 +6,7 @@ import dynamic from "dva/dynamic";
 
 import {getNavData} from "./constants/nav";
 
-dynamic.setDefaultLoadingComponent(() => <Spin size='large' className={styles.globalSpin}/>)
+dynamic.setDefaultLoadingComponent(() => <Spin size='large'/>)
 
 const getLayout = (navData, layoutName) => {
 	if (!navData.some(item => item.layoutName === layoutName) ||

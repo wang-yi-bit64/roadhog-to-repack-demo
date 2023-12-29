@@ -6,7 +6,6 @@ export const getNavData = app => [
 		layoutName: "AppLayout",
 		layout: dynamic({
 			app,
-			models: () => [],
 			component: () => import("../layouts/appLayout")
 		}),
 		children: [
@@ -16,7 +15,7 @@ export const getNavData = app => [
 				component: dynamic({
 					app,
 					models: () => [
-						import("../models/app")
+						import("../models/user")
 					],
 					component: () => import("../pages/index/index")
 				})
@@ -31,7 +30,7 @@ export const getNavData = app => [
 						component: dynamic({
 							app,
 							models: () => [
-								import("../models/app")
+								import("../models/user")
 							],
 							component: () => import("../pages/list/index")
 						})
@@ -44,7 +43,6 @@ export const getNavData = app => [
 		layoutName: "LoginLayout",
 		layout: dynamic({
 			app,
-			models: () => [],
 			component: () => import("../layouts/blankLayout")
 		}),
 		children: [
@@ -54,7 +52,7 @@ export const getNavData = app => [
 				component: dynamic({
 					app,
 					models: () => [
-						import("../models/app")
+						import("../models/user")
 					],
 					component: () => import("../pages/index/login")
 				})
@@ -65,7 +63,6 @@ export const getNavData = app => [
 		layoutName: "LogoutLayout",
 		layout: dynamic({
 			app,
-			models: () => [],
 			component: () => import("../layouts/blankLayout")
 		}),
 		children: [
@@ -74,7 +71,6 @@ export const getNavData = app => [
 				path: "/logout",
 				component: dynamic({
 					app,
-					models: () => [],
 					component: () => import("../pages/index/logout")
 				})
 			}

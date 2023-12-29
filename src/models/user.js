@@ -2,7 +2,7 @@ import queryString from "query-string"
 
 
 export default {
-	namespace: "app",
+	namespace: "user",
 	state: {
 		user: null,
 		isSiderFold: false,

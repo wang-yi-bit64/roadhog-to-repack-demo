@@ -1,5 +1,4 @@
 import React from "react"
-import {connect} from "dva"
 
 const NotFound = ({location}) => (
 	<div>
@@ -9,6 +8,5 @@ const NotFound = ({location}) => (
 	</div>
 )
 
-const mapStateToProps = () => ({})
 
-export default connect(mapStateToProps)(NotFound)
+export default NotFound

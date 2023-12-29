@@ -4,13 +4,13 @@ import {Spin} from "antd"
 
 const Logout = ({loading}) => (
 	<div>
-		<Spin spinning={loading.effects["app/logoutAndRedirect"]} delay={10000} size="large"/>
-		<div hidden={!loading.effects["app/logoutAndRedirect"]}>
+		<Spin delay={10000} size="large"/>
+		<div >
 			退出
 		</div>
 	</div>
 )
 
-const mapStateToProps = ({app, loading}) => ({app, loading})
+const mapStateToProps = ({app}) => ({app})
 
 export default connect(mapStateToProps)(Logout)
