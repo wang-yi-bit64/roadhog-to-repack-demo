@@ -30,7 +30,8 @@ module.exports = {
 							javascriptEnabled: true,
 						}
 					}
-				}]
+				}],
+				type: 'css'
 			},
 			{
 				test: /\.js$/,
