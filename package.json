@@ -1,0 +1,36 @@
+{
+  "name": "rspack-react-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "NODE_ENV=production rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.4.0",
+    "@rspack/core": "0.4.0",
+    "@rspack/plugin-react-refresh": "0.4.0",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.4",
+    "react-refresh": "^0.14.0"
+  },
+  "dependencies": {
+    "antd": "^3.6.3",
+    "classnames": "^2.2.5",
+    "dva": "^2.1.0",
+    "dva-loading": "^1.0.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.19.4",
+    "nprogress": "^0.2.0",
+    "path-to-regexp": "^2.1.0",
+    "qs": "^6.10.1",
+    "query-string": "^5.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-resizable": "^1.11.0",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
+    "url-pattern": "^1.0.3"
+  }
+}
